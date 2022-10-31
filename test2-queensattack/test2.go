@@ -6,10 +6,6 @@ import (
 	"os"
 )
 
-type List struct {
-	objects []interface{}
-}
-
 func contains(s []int, value int) bool {
 	for _, v := range s {
 		if v == value {
