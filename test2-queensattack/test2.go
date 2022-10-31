@@ -42,8 +42,8 @@ func main() {
 
 		fmt.Fscan(in, &r, &c)
 
-		ll[r].add(c)
-		ll2[c].add(r)
+		ll[r] = append(ll2[c])
+		ll2[c] = append(ll[r])
 	}
 
 	var result int64 = 0
